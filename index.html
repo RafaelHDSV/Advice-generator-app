@@ -50,7 +50,7 @@
       justify-content: center;
       align-items: center;
       background-color: var(--dark_grayish_blue);
-      padding: 2rem 2rem 4rem 2rem;
+      padding: 2rem 2rem 2.5rem 2rem;
       border-radius: 1rem;
       gap: 1rem;
       max-width: 20rem;
@@ -73,20 +73,38 @@
 
     .new_advice {
       position: absolute;
-      bottom: 0;
+      bottom: -1.25rem;
       background-color: var(--neon_green);
       border-radius: 100%;
       padding: .5rem .8rem;
+      cursor: pointer;
+      transition: .5s all ease;
     }
 
-    /* .attribution {
-      font-size: 11px;
+    .new_advice:hover {}
+
+    footer {
+      position: fixed;
+      bottom: 1rem;
       text-align: center;
     }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    } */
+    footer p {
+      font-size: 11px;
+      color: var(--light_cyan);
+    }
+
+    footer a {
+      font-size: 11px;
+      color: var(--neon_green);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .5s all ease;
+    }
+
+    footer a:hover {
+      font-size: 22px;
+    }
   </style>
 </head>
 
@@ -95,15 +113,17 @@
     <p id="id">Advice #</p>
     <p id="advice">""</p>
 
+    <img src="images/pattern-divider-desktop.svg" alt="pattern-divider-desktop.svg">
+
     <div class="new_advice">
       <img src="images/icon-dice.svg" alt="icon-dice.svg">
     </div>
   </main>
 
-  <!-- <footer class="attribution">
+  <footer class="attribution">
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
     <p>Coded by <a href="https://github.com/RafaelHDSV" target="_blank">Rafael Henrique de Sousa Vieira</a>.</p>
-  </footer> -->
+  </footer>
 
   <script>
     let idAdvice = document.getElementById('id')
@@ -115,7 +135,6 @@
     function newAdvice() {
       fetch('https://api.adviceslip.com/advice').then((response) => {
         response.json().then((advice) => {
-          // console.log(advice);
           idAdvice.innerHTML = `Advice # ${advice.slip.id}`
           textAdvice.innerHTML = `"${advice.slip.advice}"`
         })
