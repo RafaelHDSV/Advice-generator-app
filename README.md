@@ -1,8 +1,8 @@
 # Frontend Mentor - Advice generator app solution
 
-![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/NAME_OF_REPOSITORY?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/NAME_OF_REPOSITORY?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/RafaelHDSV/NAME_OF_REPOSITORY?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/Advice-generator-app?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/Advice-generator-app?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/RafaelHDSV/Advice-generator-app?style=for-the-badge)
 
 <img src="images/desktop.png" alt="desktop.png">
 
