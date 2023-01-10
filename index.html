@@ -151,7 +151,7 @@
     divDice.addEventListener('click', newAdvice)
 
     function newAdvice() {
-      fetch('https://api.adviceslip.com/advice/7').then((response) => {
+      fetch('https://api.adviceslip.com/advice').then((response) => {
         response.json().then((advice) => {
           idAdvice.innerHTML = `Advice #${advice.slip.id}`
           textAdvice.innerHTML = `"${advice.slip.advice}"`
