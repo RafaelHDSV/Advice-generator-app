@@ -10,41 +10,103 @@
   <meta name="robots" content="index, follow">
   <meta name="description"
     content="The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 
   <title>Frontend Mentor | Advice generator app</title>
 
   <style>
-    .attribution {
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+    /* font-family: 'Manrope', sans-serif; */
+
+    :root {
+      --light_cyan: hsl(193, 38%, 86%);
+      --neon_green: hsl(150, 100%, 66%);
+      --grayish_blue: hsl(217, 19%, 38%);
+      --dark_grayish_blue: hsl(217, 19%, 24%);
+      --dark_blue: hsl(218, 23%, 16%);
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-size: 28px;
+      font-family: 'Manrope', sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-width: 100%;
+      min-height: 100vh;
+      background-color: var(--dark_blue);
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--dark_grayish_blue);
+      padding: 2rem 2rem 4rem 2rem;
+      border-radius: 1rem;
+      gap: 1rem;
+      max-width: 20rem;
+      width: 100%;
+    }
+
+    #id {
+      text-transform: uppercase;
+      color: var(--neon_green);
+      font-size: 13px;
+      letter-spacing: .2rem;
+      text-align: center;
+    }
+
+    #advice {
+      color: var(--light_cyan);
+      text-align: center;
+    }
+
+    /* .attribution {
       font-size: 11px;
       text-align: center;
     }
 
     .attribution a {
       color: hsl(228, 45%, 44%);
-    }
+    } */
   </style>
 </head>
 
 <body>
+  <main>
+    <p id="id">Advice #</p>
+    <p id="advice">""</p>
+  </main>
 
-  Advice #
-  <!-- Advice ID goes here -->
-
-  "
-  <!-- Advice text goes here -->"
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <!-- <footer class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p>Coded by <a href="https://github.com/RafaelHDSV" target="_blank">Rafael Henrique de Sousa Vieira</a>.</p>
+  </footer> -->
 
   <script>
-    fetch('https://api.adviceslip.com/advice').then((response) => {
-      response.json().then((advice) => {
-        console.log(advice);
+    let idAdvice = document.getElementById('id')
+    let textAdvice = document.getElementById('advice')
+
+    function newAdvice() {
+      fetch('https://api.adviceslip.com/advice/116').then((response) => {
+        response.json().then((advice) => {
+          console.log(advice);
+          idAdvice.innerHTML = `Advice # ${advice.slip.id}`
+          textAdvice.innerHTML = `"${advice.slip.advice}"`
+        })
       })
-    })
+    }
+
+    newAdvice()
   </script>
 </body>
 
