@@ -55,6 +55,7 @@
       gap: 1rem;
       max-width: 20rem;
       width: 100%;
+      position: relative;
     }
 
     #id {
@@ -68,6 +69,14 @@
     #advice {
       color: var(--light_cyan);
       text-align: center;
+    }
+
+    .new_advice {
+      position: absolute;
+      bottom: 0;
+      background-color: var(--neon_green);
+      border-radius: 100%;
+      padding: .5rem .8rem;
     }
 
     /* .attribution {
@@ -85,6 +94,10 @@
   <main>
     <p id="id">Advice #</p>
     <p id="advice">""</p>
+
+    <div class="new_advice">
+      <img src="images/icon-dice.svg" alt="icon-dice.svg">
+    </div>
   </main>
 
   <!-- <footer class="attribution">
@@ -95,11 +108,14 @@
   <script>
     let idAdvice = document.getElementById('id')
     let textAdvice = document.getElementById('advice')
+    let divDice = document.querySelector('.new_advice')
+
+    divDice.addEventListener('click', newAdvice)
 
     function newAdvice() {
-      fetch('https://api.adviceslip.com/advice/116').then((response) => {
+      fetch('https://api.adviceslip.com/advice').then((response) => {
         response.json().then((advice) => {
-          console.log(advice);
+          // console.log(advice);
           idAdvice.innerHTML = `Advice # ${advice.slip.id}`
           textAdvice.innerHTML = `"${advice.slip.advice}"`
         })
