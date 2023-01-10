@@ -1,12 +1,12 @@
-# NAME_OF_REPOSITORY
+# Frontend Mentor - Advice generator app solution
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/NAME_OF_REPOSITORY?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/NAME_OF_REPOSITORY?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/RafaelHDSV/NAME_OF_REPOSITORY?style=for-the-badge)
 
-<img src="bg.jpg" alt="bg.jpg">
+<img src="images/desktop.png" alt="desktop.png">
 
-> DESCRIPTION HERE: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+> This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -23,16 +23,9 @@
 
 Users should be able to:
 
-- DESCRIPTION OF WHAT THE USER CAN DO
-<!--- View the optimal layout for the app depending on their device's screen size
+- View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Add new todos to the list
-- Mark todos as complete
-- Delete todos from the list
-- Filter by all/active/complete todos
-- Clear all completed todos
-- Toggle light and dark mode
-- **Bonus**: Drag and drop to reorder items on the list-->
+- Generate a new piece of advice by clicking the dice icon
 
 ### Links
 
@@ -43,21 +36,18 @@ Users should be able to:
 
   - Desktop
   
-    ![](bg.jpg)
+    ![](images/desktop.png)
     
   - Mobile
     
-    <img src="bg.jpg" alt="bg.jpg" width="300px" height="700px">
+    <img src="images/mobile.png" alt="images/mobile.png" width="300px">
 
 ## My process
 
 ### Built with
 
-- DESCRIPTION OF LANGUAGE
-<!--- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Javascript properties-->
+- HTML
+- CSS
+- JAVASCRIPT
 
 [⬆ Back to the top](#name_of_repository)<br>
