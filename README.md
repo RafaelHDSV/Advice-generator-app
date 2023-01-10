@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: URL SOLUTION HERE
+- Solution URL: https://www.frontendmentor.io/solutions/advice-generator-app-XwRvpbdQ0K
 - Live Site URL: https://advice-generator-app-rafael.netlify.app
 
 ### Screenshot
