@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: URL SOLUTION HERE
-- Live Site URL: URL SITE HERE
+- Live Site URL: https://advice-generator-app-rafael.netlify.app
 
 ### Screenshot
 
