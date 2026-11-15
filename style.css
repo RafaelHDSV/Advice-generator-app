@@ -97,3 +97,10 @@ footer a {
 footer a:hover {
     font-size: 22px;
 }
+
+/* board22 visit-count */
+footer #va-visits {
+  font-size: inherit;
+  color: inherit;
+  opacity: inherit;
+}
